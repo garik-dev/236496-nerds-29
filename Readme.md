@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Игорь Ляхов](https://up.htmlacademy.ru/htmlcss/29/user/236496).
-* Наставник: `Неизвестно`.
+* Наставник: `Скоро будет`(https://up.htmlacademy.ru/htmlcss/29/tutors/payment).
 
 ---
 
