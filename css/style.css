@@ -1,0 +1,260 @@
+:root {
+  --basic-black: #000000;
+  --basic-dark-black: #283136;
+  --basic-light-black: #4d4d4d;
+  --basic-extra-black: #231f20;
+  --basic-neutral-grey: #eeeeee;
+  --basic-grey: #a6a6a6;
+  --basic-light-grey: #e1e1e1;
+  --basic-extra-grey: #dfdfdf;
+  --basic-dark-grey: #d5d5d5;
+  --basic-white: #ffffff;
+  --basic-red: #fb565a;
+  --basic-light-red: #e74246;
+  --basic-extra-red: #d7373b;
+  --basic-green: #00ca74;
+  --basic-light-green: #00bc6c;
+  --basic-extra-green: #00aa62;
+  --basic-yellow: #efc84a;
+  --basic-light-yellow: #eab534;
+  --basic-extra-yellow: #e5a722;
+}
+
+/* Global */
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-dark-black);
+  text-transform: none;
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  padding: 50px 140px;
+  background-color: var(--basic-neutral-grey);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.site-navigation,
+.basket-link {
+  list-style: none;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.site-navigation a,
+.basket-link {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.basket-link:hover {
+  color: var(--basic-red);
+}
+.site-navigation a:focus,
+.basket-link:focus {
+  color: var(--basic-gray);
+}
+
+.site-navigation-current a:not([href]) {
+  color: var(--basic-black);
+  text-decoration: underline;
+  text-decoration-color: var(--basic-red);
+}
+
+/* slider */
+
+.slider {
+  padding-left: 140px;
+  list-style: none;
+  background-color: var(--basic-neutral-grey);
+}
+.slogan {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.slider-pagination li {
+  list-style-type: none;
+}
+
+.slider.button,
+.services-item.button {
+  padding: 15px 55px;
+  background-color: var(--basic-red);
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.slider.button:hover,
+.services-item.button:hover {
+  background-color: var(--basic-light-red);
+}
+
+.slider.button:focus,
+.services-item.button:focus {
+  background-color: var(--basic-extra-red);
+  opacity: 0.3;
+}
+
+/*services*/
+
+.services-list {
+  list-style: none;
+}
+
+.services-item {
+  text-align: left;
+}
+
+.services-item h3 {
+  text-align: left;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.services-item.button-green {
+  padding: 15px 55px;
+  background-color: var(--basic-green);
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.services-item.button-green:hover {
+  background-color: var(--basic-light-green);
+}
+
+.services-item.button-green:focus {
+  background-color: var(--basic-extra-green);
+  opacity: 0.3;
+}
+
+.services-item.button-yellow {
+  padding: 15px 55px;
+  background-color: var(--basic-yellow);
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.services-item.button-yellow:hover {
+  background-color: var(--basic-light-yellow);
+}
+
+.services-item.button-yellow:focus {
+  background-color: var(--basic-extra-yellow);
+  opacity: 0.3;
+}
+
+/*about*/
+
+h4 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.development-list,
+.portfolio-list {
+  list-style: none;
+}
+
+/*footer*/
+
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.social ul {
+  list-style: none;
+}
+
+.social-button {
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  background: linear-gradient(0deg, #e1e1e1, #e1e1e1), #ffffff;
+}
+
+.promo span {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.promo p {
+  line-height: 22px;
+}
+
+/*contact*/
+
+.contact h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contact p {
+  font-weight: regular;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.contact-tel a {
+  color: #666666;
+}
+
+.button {
+  padding: 15px 55px;
+  background-color: var(--basic-red);
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 3px;
+}

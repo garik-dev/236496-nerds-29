@@ -1,82 +1,96 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Интернет магазин готовых шаблонов «Nerds»</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <header>
-      <nav>
-        <a>
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="#nowhere">
           <img src="https://via.placeholder.com/160x65" alt="Логотип интернет-магазина Nerds">
         </a>
-        <ul>
-          <li><a href="">Студия</a></li>
-          <li><a href="">Клиенты</a></li>
+        <ul class="site-navigation">
+          <li><a href="#nowhere">Студия</a></li>
+          <li><a href="#nowhere">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="">Контакты</a></li>
+          <li><a href="#nowhere">Контакты</a></li>
         </ul>
-        <a href="">Корзина</a>
+        <a  href="" class="basket-link">Корзина</a>
       </nav>
     </header>
-      <main>
-        <h1>Интернет-магазин готовых шаблонов «Nerds»</h1>
-        <section class="slider">
-          <h2>Преимущества</h2>
-          <ul>
+      <main class="main-page">
+        <h1 class="visually-hidden">Интернет-магазин готовых шаблонов «Nerds»</h1>
+        <section>
+          <h2 class="visually-hidden">Преимущества</h2>
+          <ul class="slider">
             <li>
               <p class="slogan">Долго, дорого,<br>скрупулезно</p>
               <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-              <a href="blank.html">Узнать больше</a>
+              <a href="blank.html" class="slider button">Узнать больше</a>
               <img src="https://via.placeholder.com/760x430" alt="Преимущество 1">
             </li>
           </ul>
-            <div class="pagination">
+            <div class="slider-pagination">
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="9" cy="9" r="9" fill="white"/>
+                  </svg></li>
+                <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="9" cy="9" r="9" fill="white"/>
+                  </svg></li>
+                <li><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="9" cy="9" r="9" fill="white"/>
+                  </svg></li>
               </ul>
             </div>
         </section>
-        <section>
-          <h2>Услуги</h2>
-          <ul>
-            <li>
+        <section class="services">
+          <div class="wrapper">
+          <h2 class="visually-hidden">Услуги</h2>
+          <ul class="services-list">
+            <li class="services-item">
               <img src="https://via.placeholder.com/300x146" alt="Изображение веб-сайта">
               <h3>Веб-сайты</h3>
               <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-              <a href="">Заказать</a>
+              <a class="services-item button"href="">Заказать</a>
             </li>
-            <li>
+            <li class="services-item">
               <img src="https://via.placeholder.com/300x146" alt="Изображение приложения">
               <h3>Приложения</h3>
               <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-              <a href="blank.html">Заказать</a>
+              <a class="services-item button-green" href="">Заказать</a>
             </li>
-            <li>
+            <li class="services-item">
               <img src="https://via.placeholder.com/300x146" alt="Изображение призентации">
               <h3>Презентации</h3>
               <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-              <a href="blank.html">Заказать</a>
+              <a class="services-item button-yellow" href="">Заказать</a>
             </li>
           </ul>
+          </div>
         </section>
+        <div class="container">
         <section class="about">
-          <h2>О студии</h2>
+          <h2 class="visually-hidden">О студии</h2>
+          <p class="slogan">Мы - маленькая, но гордая<br>дизайн-студия из Краснодара</p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <p>Выполняем заказы на разработку:</p>
-          <ul>
-            <li>Веб-сайтов любой сложности</li>
-            <li>Мобильных приложений для iOS и Android</li>
-            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          <h4>Выполняем заказы на разработку:</h4>
+          <ul class="development-list">
+            <li class="development-item">Веб-сайтов любой сложности</li>
+            <li class="development-item">Мобильных приложений для iOS и Android</li>
+            <li class="development-item">Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </section>
+      </div>
         <section class="triggers">
-          <h2>Наши достижения</h2>
+          <h2 class="visually-hidden">Наши достижения</h2>
           <img src="https://via.placeholder.com/360x208" alt="Логотип интернет-магазина Nerds">
-          <p>с 2004 года Любим точность во всем:</p>
-          <table>
+          <h4>с 2004 года Любим точность во всем:</h4>
+          <table class="triggers-list">
             <tr>
               <td>Уровень самоотдачи</td>
               <td>146%</td>
@@ -91,83 +105,71 @@
             </tr>
           </table>
         </section>
-        <section>
-          <h2>Портфолио</h2>
-          <ul>
-            <li>
-              <a href="https://htmlacademy.ru/intensive/htmlcss">
+      </div>
+        <section class="portfolio">
+          <div class="wrapper">
+          <h2 class="visually-hidden">Портфолио</h2>
+          <ul class="portfolio-list">
+            <li class="portfolio-item">
+              <a href="https://htmlacademy.ru/intensive/htmlcss" class="portfolio-link">
                 <img src="https://via.placeholder.com/200x68" alt="html academy">
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="portfolio-item">
+              <a href="" class="portfolio-link">
                 <img src="https://via.placeholder.com/200x68" alt="Barbeshop Boradinski">
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="portfolio-item">
+              <a href="" class="portfolio-link">
                 <img src="https://via.placeholder.com/200x68" alt="Pink">
               </a>
             </li>
-            <li>
-              <a href="">
+            <li class="portfolio-item">
+              <a href="" class="portfolio-link">
                 <img src="https://via.placeholder.com/200x68" alt="Mishka">
               </a>
             </li>
           </ul>
+        </div>
         </section>
+
         <section class="map">
-          <h2>Где нас найти - карта</h2>
-          <img src="https://via.placeholder.com/1440x416" alt="Pink">
+          <h2 class="visually-hidden">Где нас найти - карта</h2>
+          <img src="https://via.placeholder.com/1440x416" class="map-img" alt="Карта">
+          <img src="https://via.placeholder.com/231x190" class="map-marker" alt="Местоположение на карте">
         </section>
         <section class="contact">
           <h2>NЁRDS DESIGN STUDIO</h2>
           <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-          <button type="button">Напишите нам</button>
+          <p class="contact-tel">тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+          <button type="button" class="button">Напишите нам</button>
         </section>
       </main>
-      <footer>
+      <footer class="main-footer">
         <div class="social">
           <ul>
-            <li>
+            <li class="social-button">
               <a href="https://vk.com/htmlacademy">
-                Вконтакте
+                VK
               </a>
             </li>
-            <li>
+            <li class="social-button">
               <a href="https://www.facebook.com/htmlacademy/">
-              Фейсбук
+              F
               </a>
             </li>
-            <li>
+            <li class="social-button">
               <a href="https://www.instagram.com/htmlacademy/">
-              Инстаграм
+              INST
               </a>
             </li>
           </ul>
         </div>
         <div class="promo">
-          <p>Давайте дружить, это выгодно!</p>
+          <span>Давайте дружить, это выгодно!</span>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </footer>
-
-      <section class="modal">
-        <h2>Напишите нам</h2>
-        <form action="#" method="post">
-          <p><b>Ваше имя</b>
-          <input type="text" placeholder="Представтесь, пожалуйста" required>
-        </p>
-          <p><b>Ваш e-mail</b>
-          <input type="email" placeholder="Для отправки ответа">
-        </p>
-          <p><b>Текст письма</b><br>
-          <textarea name="comment" cols="40" rows="3">В свободной форме</textarea>
-        </p>
-          <button type="button">Отправить</button>
-        </form>
-      </section>
-
   </body>
 </html>
