@@ -190,7 +190,7 @@ img {
 
 /*about*/
 
-h4 {
+.title-about {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
