@@ -5,7 +5,7 @@
   --basic-extra-black: #231f20;
   --basic-neutral-grey: #eeeeee;
   --basic-grey: #a6a6a6;
-  --basic-light-grey: #e1e1e1;
+  --basic-light-grey: #E8E8E8;
   --basic-extra-grey: #dfdfdf;
   --basic-dark-grey: #d5d5d5;
   --basic-white: #ffffff;
@@ -60,7 +60,6 @@ img {
 /* Main navigation */
 
 .main-navigation {
-  padding: 50px 140px;
   background-color: var(--basic-neutral-grey);
   font-size: 16px;
   line-height: 20px;
@@ -82,6 +81,7 @@ img {
 .basket-link:hover {
   color: var(--basic-red);
 }
+
 .site-navigation a:focus,
 .basket-link:focus {
   color: var(--basic-gray);
@@ -96,14 +96,16 @@ img {
 /* slider */
 
 .slider {
-  padding-left: 140px;
+  margin: 0 auto;
+  width: 1160px;
   list-style: none;
   background-color: var(--basic-neutral-grey);
 }
+
 .slogan {
   font-weight: 500;
   font-size: 55px;
-  line-height: 55px;
+  line-height: 120%;
 }
 
 .slider-pagination li {
@@ -205,6 +207,7 @@ img {
 /*footer*/
 
 .main-footer {
+  padding: 50px 140px;
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
@@ -239,7 +242,7 @@ img {
 }
 
 .contact p {
-  font-weight: regular;
+  font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: #666666;
@@ -257,4 +260,77 @@ img {
   color: #ffffff;
   text-transform: uppercase;
   border-radius: 3px;
+}
+
+/*page-catalog*/
+
+.page-header {
+  background-color: var(--basic-neutral-grey);
+}
+
+.page-content,
+.filter-catalog {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 50px 140px;
+}
+
+.catalog-title {
+  margin: 0;
+  padding-bottom: 110px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.sort {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.sort-list,
+.sort-control,
+.content-browser,
+.pagination {
+  list-style: none;
+}
+
+.sort-item {
+  font-size: 14px;
+  color: #E8E8E8;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sort-item a.active {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.pagination-item {
+  width: 50px;
+  text-align: center;
+  padding: 16px;
+  border: 1px solid #DBDBDB;
+  background-color: var(--basic-neutral-grey);
+}
+
+.pagination-item-current {
+  width: 50px;
+  text-align: center;
+  padding: 16px;
+  background-color: var(--basic-white);
+  border: 1px solid #DBDBDB;
+}
+
+.pagination-item-next {
+  width: 260px;
+  background-color: var(--basic-neutral-grey);
+  border: 1px solid #DBDBDB;
+  text-align: center;
+  padding: 16px;
 }
