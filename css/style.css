@@ -125,7 +125,7 @@ img {
 
 .slider.button:hover,
 .services-item.button:hover {
-  background-color: var(--basic-light-red);
+  background: var(--basic-red);
 }
 
 .slider.button:focus,
@@ -221,7 +221,14 @@ img {
   height: 81px;
   border-radius: 50%;
   background: linear-gradient(0deg, #e1e1e1, #e1e1e1), #ffffff;
+  text-align: center;
 }
+
+.social-button:hover {
+
+background: red;
+}
+
 
 .promo span {
   font-weight: bold;
