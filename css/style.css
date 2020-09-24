@@ -22,9 +22,11 @@
 
 /* Global */
 
+
+
 body {
-  max-width: 1440px;
-  margin: 0 auto;
+  min-width: 1440px;
+  margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -52,18 +54,48 @@ img {
   margin: -1px;
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.main-header {
+  background-color: var(--basic-neutral-grey);
+}
+
+.main-page {
+  margin-top: 0;
+}
+
 .wrapper {
-  max-width: 1160px;
+  width: 1160px;
   margin: 0 auto;
 }
 
 /* Main navigation */
 
 .main-navigation {
+  display: grid;
+  grid-template-columns: 160px 1fr min-content;
   background-color: var(--basic-neutral-grey);
   font-size: 16px;
   line-height: 20px;
 }
+
+.site-navigation {
+  display: flex;
+  justify-content: center;
+}
+
+
 
 .site-navigation,
 .basket-link {
@@ -95,14 +127,20 @@ img {
 
 /* slider */
 
+.slide {
+  margin: 0;
+  background-color: var(--basic-neutral-grey);
+}
+
 .slider {
-  margin: 0 auto;
   width: 1160px;
+  margin: 0 auto;
   list-style: none;
   background-color: var(--basic-neutral-grey);
 }
 
 .slogan {
+  margin: 0;
   font-weight: 500;
   font-size: 55px;
   line-height: 120%;
@@ -192,6 +230,11 @@ img {
 
 /*about*/
 
+.about-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .title-about {
   font-weight: bold;
   font-size: 16px;
@@ -204,12 +247,43 @@ img {
   list-style: none;
 }
 
+/*  portfolio */
+
+.portfolio-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.map {
+  width: 100%;
+  height: 416px;
+  background-image: url(../img/map.jpg);
+}
+
 /*footer*/
 
 .main-footer {
-  padding: 50px 140px;
   color: var(--basic-black);
   background-color: var(--basic-white);
+}
+
+.footer-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.footer-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.social {
+  width: 260px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-around;
 }
 
 .social ul {
@@ -217,15 +291,14 @@ img {
 }
 
 .social-button {
-  width: 81px;
-  height: 81px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background: linear-gradient(0deg, #e1e1e1, #e1e1e1), #ffffff;
   text-align: center;
 }
 
 .social-button:hover {
-
 background: red;
 }
 
