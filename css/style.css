@@ -128,7 +128,7 @@ img {
 /* slider */
 
 .slide {
-  margin: 0;
+  margin-bottom: 80px;
   background-color: var(--basic-neutral-grey);
 }
 
@@ -174,8 +174,17 @@ img {
 
 /*services*/
 
+.services {
+  margin-bottom: 80px;
+}
+
 .services-list {
   list-style: none;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .services-item {
@@ -231,6 +240,7 @@ img {
 /*about*/
 
 .about-wrap {
+  margin-bottom: 80px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -250,8 +260,9 @@ img {
 /*  portfolio */
 
 .portfolio-list {
+  margin-bottom: 80px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .map {
