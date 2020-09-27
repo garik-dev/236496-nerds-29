@@ -26,7 +26,12 @@
     </div>
     </header>
       <main class="page-main">
-
+      <div class="page-grid wrapper">
+        <section class="filter-catalog">
+          <h2 class="visually-hidden">Выбор шаблона</h2>
+          <p class="filter sort">Стоимость</p>
+        <form></form>
+      </section>
         <section class="page-content">
             <h2 class="visually-hidden">Каталог шаблонов</h2>
             <div class="content-header">
@@ -35,20 +40,22 @@
                 <li class="sort-item">
                   <a class="sort-item active" href="#nowhere">По цене</a>
                 </li>
-                <li class="sort-item" href="#nowhere">
-                  <a>По типу</a>
+                <li class="sort-item">
+                  <a class="sort-item active" href="#nowhere" >По типу</a>
                 </li>
                 <li class="sort-item">
                   <a>По названию</a>
                 </li>
-              </ul>
-              <ul class="sort-control">
                 <li>
-                  <a href="#nowhere" class="icon-down active">Вниз</a>
-                </li>
-                <li>
-                  <a href="#nowhere" class="icon-up">Вверх</a>
-                </li>
+                  <ul class="sort-control">
+                    <li>
+                      <a href="#nowhere" class="icon-down active">Вниз</a>
+                    </li>
+                    <li>
+                      <a href="#nowhere" class="icon-up">Вверх</a>
+                    </li>
+                  </ul>
+              </li>
               </ul>
             </div
             >
@@ -112,62 +119,106 @@
                 <a href="#nowhere">2</a>
               </li>
               <li class="pagination-item">
-                <a href="#nowhere"></a>3</a>
+                <a href="#nowhere">3</a>
               </li>
               <li class="pagination-item-next">
                 <a href="#nowhere" class="paginaton-link">Следующая</a>
               </li>
             </ul>
           </section>
-          <section class="filter-catalog">
-            <h2 class="visually-hidden">Выбор шаблона</h2>
-          <form></form>
-        </section>
+      </div>
         <section class="map">
           <h2 class="visually-hidden">Где нас найти - карта</h2>
-          <img src="img/map.jpg" class="map-img"
-                alt="Карта">
-              <img src="img/map-marker.png" width="230" height="190" class="map-marker"
-                alt="Местоположение на карте">
+          <img src="img/map-marker.png" width="230" height="190"
+            class="map-marker"
+            alt="Местоположение на карте">
         </section>
         <section class="contact">
           <h2>NЁRDS DESIGN STUDIO</h2>
           <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-          <p class="contact-tel">тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-          <button type="button">Напишите нам</button>
+          <p class="contact-tel">тел. <a href="tel:+78122757575">+7 (812)
+              275-75-75</a></p>
+          <button type="button" class="button">Напишите нам</button>
         </section>
       </main>
       <footer class="main-footer">
-        <div class="social">
-          <ul>
-            <li class="social-button">
-              <a href="https://vk.com/htmlacademy">
-                <svg class="social-item" width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M16.138 11.5108C17.094 11.2018 18.318 13.5508 19.621 14.4498C20.599 15.1308 21.348 14.9838 21.348 14.9838L24.821 14.9338C24.821 14.9338 26.636 14.8218 25.778 13.3798C25.707 13.2598 25.275 12.3108 23.193 10.3578C21.016 8.31477 21.311 8.64577 23.932 5.11377C25.529 2.96077 26.168 1.64577 25.968 1.08577C25.776 0.54677 24.603 0.68677 24.603 0.68677L20.69 0.71377C20.309 0.71477 19.986 0.83277 19.839 1.22877C19.836 1.23277 19.218 2.89477 18.394 4.30777C16.653 7.29677 15.958 7.45577 15.67 7.26877C15.009 6.83577 15.176 5.53177 15.176 4.60477C15.176 1.70777 15.608 0.49977 14.33 0.18777C13.903 0.0837698 13.591 0.0157698 12.502 0.00576984C11.11 -0.0152302 9.92797 0.00576985 9.25797 0.33477C8.81297 0.55777 8.47197 1.04677 8.67897 1.07477C8.93897 1.10977 9.52197 1.23477 9.83397 1.66077C10.235 2.21277 10.223 3.44977 10.223 3.44977C10.223 3.44977 10.452 6.86077 9.68297 7.28377C9.15497 7.57377 8.43297 6.98177 6.87997 4.26777C6.08697 2.87977 5.48797 1.34577 5.48797 1.34577C5.48797 1.34577 5.37197 1.06077 5.16197 0.90477C4.91197 0.71977 4.56197 0.66077 4.56197 0.66077L0.84797 0.68477C0.84797 0.68477 0.28997 0.70077 0.0849697 0.94677C-0.0970303 1.16477 0.0699697 1.61477 0.0699697 1.61477C0.0699697 1.61477 2.97897 8.49577 6.27297 11.9618C9.29297 15.1438 12.725 14.9328 12.725 14.9328H14.28C14.28 14.9328 14.749 14.8788 14.989 14.6208C15.213 14.3808 15.203 13.9298 15.203 13.9298C15.203 13.9298 15.172 11.8208 16.138 11.5108Z" fill="white"/>
-                </svg>
-              </a>
-            </li>
-            <li class="social-button">
-              <a href="https://www.facebook.com/htmlacademy/">
-                <svg class="social-item" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
-                </svg>
-              </a>
-            </li>
-            <li class="social-button">
-              <a href="https://www.instagram.com/htmlacademy/">
-                <svg class="social-item" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z" fill="white"/>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="promo">
-          <span>Давайте дружить, это выгодно!</span>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-      </footer>
+        <div class="footer-wrapper">
+          <section class="social">
+            <h2 class="visually-hidden">Нердс в социальных сетях</h2>
+            <ul class="social-list">
+              <li class="social-button">
+                <a href="https://vk.com/htmlacademy">
+                  <svg class="social-item" width="27" height="15" viewBox="0
+                    0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.138 11.5108C17.094 11.2018 18.318 13.5508
+                      19.621 14.4498C20.599 15.1308 21.348 14.9838 21.348
+                      14.9838L24.821 14.9338C24.821 14.9338 26.636 14.8218
+                      25.778 13.3798C25.707 13.2598 25.275 12.3108 23.193
+                      10.3578C21.016 8.31477 21.311 8.64577 23.932
+                      5.11377C25.529 2.96077 26.168 1.64577 25.968
+                      1.08577C25.776 0.54677 24.603 0.68677 24.603
+                      0.68677L20.69 0.71377C20.309 0.71477 19.986 0.83277
+                      19.839 1.22877C19.836 1.23277 19.218 2.89477 18.394
+                      4.30777C16.653 7.29677 15.958 7.45577 15.67
+                      7.26877C15.009 6.83577 15.176 5.53177 15.176
+                      4.60477C15.176 1.70777 15.608 0.49977 14.33
+                      0.18777C13.903 0.0837698 13.591 0.0157698 12.502
+                      0.00576984C11.11 -0.0152302 9.92797 0.00576985 9.25797
+                      0.33477C8.81297 0.55777 8.47197 1.04677 8.67897
+                      1.07477C8.93897 1.10977 9.52197 1.23477 9.83397
+                      1.66077C10.235 2.21277 10.223 3.44977 10.223
+                      3.44977C10.223 3.44977 10.452 6.86077 9.68297
+                      7.28377C9.15497 7.57377 8.43297 6.98177 6.87997
+                      4.26777C6.08697 2.87977 5.48797 1.34577 5.48797
+                      1.34577C5.48797 1.34577 5.37197 1.06077 5.16197
+                      0.90477C4.91197 0.71977 4.56197 0.66077 4.56197
+                      0.66077L0.84797 0.68477C0.84797 0.68477 0.28997
+                      0.70077 0.0849697 0.94677C-0.0970303 1.16477 0.0699697
+                      1.61477 0.0699697 1.61477C0.0699697 1.61477 2.97897
+                      8.49577 6.27297 11.9618C9.29297 15.1438 12.725 14.9328
+                      12.725 14.9328H14.28C14.28 14.9328 14.749 14.8788
+                      14.989 14.6208C15.213 14.3808 15.203 13.9298 15.203
+                      13.9298C15.203 13.9298 15.172 11.8208 16.138 11.5108Z"
+                      fill="white" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-button">
+                  <a href="https://www.facebook.com/htmlacademy/">
+                    <svg class="social-item" width="12" height="22"
+                      viewBox="0 0 12 22" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 4V0H8C5.79086 0 4 1.79086 4
+                        4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-button">
+                    <a href="https://www.instagram.com/htmlacademy/">
+                      <svg class="social-item" width="21" height="21"
+                        viewBox="0 0 21 21" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3
+                          0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18
+                          21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14
+                          10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7
+                          12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3
+                          18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4
+                          14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899
+                          17 10.5C16.9986 9.99464 16.9379 9.49118 16.819
+                          9H18V18H3ZM14 7H18V3H14V7Z" fill="white" />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </section>
+                <section class="promo">
+                  <h2 class="visually-hidden">Промоакция магазина Нердс</h2>
+                  <span>Давайте дружить, это выгодно!</span>
+                  <p>Скидка 10% для друзей из социальных сетей.</p>
+                </section>
+              </div>
+            </footer>
 
   </body>
 </html>
