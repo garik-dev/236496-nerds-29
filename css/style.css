@@ -290,12 +290,12 @@ img {
 
 .about-wrap {
   margin-bottom: 80px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 800px 360px;
 }
 
 .about {
-  max-width: 750px;
+  max-width: 650px;
 }
 
 .slogan-about {
@@ -432,7 +432,7 @@ img {
 
 .page-grid {
   display: grid;
-  grid-template-columns: 400px 800px;
+  grid-template-columns: 400px 760px;
 
 }
 
@@ -525,18 +525,16 @@ img {
 }
 
 .content-browser {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   padding: 0;
-  margin: 0;
-  margin-bottom: 30px;
-  list-style: none;
 }
 
 .content-item {
-  width: 358px;
+  width: 360px;
   height: 618px;
+  margin-right: 40px;
   margin-bottom: 30px;
   border: 1px solid  var(--basic-light-grey);
   border-radius: 3px;
@@ -545,6 +543,7 @@ img {
 .content-item:nth-child(2n) {
   margin-right: 0;
 }
+
 .browser {
   width: 360px;
   height: 40px;
