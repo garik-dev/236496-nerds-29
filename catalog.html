@@ -4,6 +4,10 @@
 <head>
     <meta charset="utf-8">
     <title>Магазин готовых шаблонов</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -35,67 +39,26 @@
                 <form action="https://echo.htmlacademy.ru" method="post">
                     <fieldset>
                         <legend>Стоимость:</legend>
-                        <input type="range" id="priceslider" name="priceslider" min="0" max="15000" step="1" />
-                        <p>
-                            <label>От <input type="text" value="0" /></label>
-                            <label>До <input type="text" value="15000" /></label>
-                        </p>
+                        <input type="range" id="priceslider" name="priceslider" min="0" max="15000" step="1">
+                        <label>От <input type="text" value="0"></label>
+                        <label>До <input type="text" value="15000"></label>
                     </fieldset>
                     <fieldset>
                         <legend>Сетка</legend>
-                        <p>
-                            <label><input type="radio" name="grid" value="adaptive" checked />
-              Адаптивная</label
-            >
-          </p>
-          <p>
-            <label
-              ><input type="radio" name="grid" value="fixed" />
-              Фиксированная</label
-            >
-          </p>
-          <p>
-            <label
-              ><input type="radio" name="grid" value="rubber" />
-              Резиновая</label
-            >
-          </p>
-        </fieldset>
-        <fieldset>
-          <legend>Особенности:</legend>
-          <p>
-            <label
-              ><input type="checkbox" name="features" value="slider" checked />
-              Слайдер</label
-            >
-          </p>
-          <p>
-            <label
-              ><input type="checkbox" name="features" value="advantages" /> Блок
-              преимуществ</label
-            >
-          </p>
-          <p>
-            <label
-              ><input type="checkbox" name="features" value="news" checked />
-              Новости</label
-            >
-          </p>
-          <p>
-            <label
-              ><input type="checkbox" name="features" value="galery" />
-              Галерея</label
-            >
-          </p>
-          <p>
-            <label
-              ><input type="checkbox" name="features" value="basket" />
-              Корзина</label
-            >
-          </p>
-        </fieldset>
-        <button type="submit">Показать</button>
-      </form>
+                        <label><input type="radio" name="grid" value="adaptive" checked> Адаптивная</label>
+                        <label><input type="radio" name="grid" value="fixed"> Фиксированная</label>
+                        <label><input type="radio" name="grid" value="rubber"> Резиновая</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Особенности:</legend>
+                        <label><input type="checkbox" name="features" value="slider" checked> Слайдер</label>
+                        <label><input type="checkbox" name="features" value="advantages"> Блок преимуществ</label>
+                        <label><input type="checkbox" name="features" value="news" checked> Новости</label>
+                        <label><input type="checkbox" name="features" value="galery"> Галерея</label>
+                        <label><input type="checkbox" name="features" value="basket"> Корзина</label>
+                    </fieldset>
+                    <button type="submit">Показать</button>
+                </form>
             </section>
             <section class="page-content">
                 <h2 class="visually-hidden">Каталог шаблонов</h2>
@@ -131,7 +94,7 @@
                                 <span></span>
                                 <span></span>
                             </div>
-                            <img src="img/sedona.jpg" width="358" height="578" alt="Sedona">
+                            <img src="img/sedona.webp" width="358" height="578" alt="Sedona">
                         </li>
                         <li class="content-item">
                             <div class="browser">
@@ -139,7 +102,7 @@
                                 <span></span>
                                 <span></span>
                             </div>
-                            <img src="img/pink-template.jpg" width="358" height="578" alt="Pink App">
+                            <img src="img/pink.webp" width="358" height="578" alt="Pink App">
                         </li>
                         <li class="content-item">
                             <div class="browser">
@@ -147,7 +110,7 @@
                                 <span></span>
                                 <span></span>
                             </div>
-                            <img src="img/borodinski-template.jpg" width="358" height="578" alt="Barbeshop">
+                            <img src="img/barbershop.webp" width="358" height="578" alt="Barbeshop">
                         </li>
                         <li class="content-item">
                             <div class="browser">
@@ -155,7 +118,7 @@
                                 <span></span>
                                 <span></span>
                             </div>
-                            <img src="img/mishka-template.jpg" width="358" height="578" alt="Mishka">
+                            <img src="img/mishka.webp" width="358" height="578" alt="Mishka">
                         </li>
                         <li class="content-item">
                             <div class="browser">
@@ -163,7 +126,7 @@
                                 <span></span>
                                 <span></span>
                             </div>
-                            <img src="img/a+template.jpg" width="358" height="578" alt="А+">
+                            <img src="img/school.webp" width="358" height="578" alt="А+">
                         </li>
                         <li class="content-item">
                             <div class="browser">
@@ -171,7 +134,7 @@
                                 <span></span>
                                 <span></span>
                             </div>
-                            <img src="img/kvast-template.jpg" width="358" height="578" alt="Кваст">
+                            <img src="img/kvast.webp" width="358" height="578" alt="Кваст">
                         </li>
                     </ul>
                 </div>
@@ -192,6 +155,7 @@
             </section>
             <section class="map">
                 <h2 class="visually-hidden">Где нас найти - карта</h2>
+                <img src="img/map.jpg" width="100%" height="416" alt="Карта Санкт-Петербурга" />
                 <img src="img/map-marker.png" width="230" height="190" class="map-marker" alt="Местоположение на карте">
                 <section class="contact">
                     <h2>NЁRDS DESIGN STUDIO</h2>
