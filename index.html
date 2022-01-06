@@ -13,7 +13,7 @@
     <link href="css/style.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="page-body">
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo">
@@ -26,61 +26,59 @@
                 <li><a href="catalog.html">Магазин</a></li>
                 <li><a href="blank.html">Контакты</a></li>
             </ul>
-            <div class="basket">
-                <a href="blank.html" class="basket-link">Корзина</a>
-            </div>
+            <a class="login-link" href="blank.html">Корзина</a>
         </nav>
     </header>
-    <main class="main-page">
+    <main class="container">
         <h1 class="visually-hidden">Интернет-магазин готовых шаблонов «Nerds»</h1>
         <section class="advantage">
             <h2 class="visually-hidden">Преимущества</h2>
-            <div class="slider-wrap">
-                <div class="slide">
-                    <p class="slogan">Долго, дорого,<br />скрупулезно</p>
-                    <p class="slider-text">
+            <div class="advantage-slider">
+                <div class="advantage-slide">
+                    <p class="advantage-slogan">Долго, дорого,<br />скрупулезно</p>
+                    <p class="page-text">
                         Математически выверенный дизайн<br /> для вашего сайта или мобильного приложения.
                     </p>
-                    <a href="blank.html" class="slider button">Узнать больше</a>
+                    <a href="blank.html" class="button slider-button">Узнать больше</a>
 
-                    <img src="img/slide1.png" width="760" height="431" alt="Преимущество 1" />
+                    <img src="img/slide1.png" width="760" height="431" alt="Изображение смартфонов" />
                 </div>
                 <!--
-                <div class="slide">
-                    <p class="slogan">
+                <div class="advantage-slide">
+                    <p class="advantage-slogan">
                         Любим математику<br /> как никто другой
                     </p>
-                    <p class="slider-text">
+                    <p class="page-text">
                         Никакого креатива, только математические формулы<br /> для расчета идеальных пропорций
                     </p>
-                    <a href="blank.html" class="slider button">Узнать больше</a>
+                    <a href="blank.html" class="button slider-button">Узнать больше</a>
 
-                    <img src="img/slide2.png" width="760" height="431" alt="Преимущество 1" />
+                    <img src="img/slide2.png" width="760" height="431" alt="Изображение мониторов" />
                 </div>
-                <div class="slide">
-                    <p class="slogan">
+                <div class="advantage-slide">
+                    <p class="advantage-slogan">
                         Только ночь,<br /> только хардкор
                     </p>
-                    <p class="slider-text">
+                    <p class="page-text">
                         Математически выверенный дизайн<br /> для вашего сайта или мобильного приложения.
                     </p>
-                    <a href="blank.html" class="slider button">Узнать больше</a>
+                    <a href="blank.html" class="button slider-button">Узнать больше</a>
 
                     <img src="img/slide3.png" width="760" height="431" alt="Преимущество 1" />
                 </div>
               -->
                 <ul class="slider-pagination">
-                    <li>
+                    <li class="switch">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="9" cy="9" r="9" fill="white" />
               </svg>
                     </li>
-                    <li>
+                    <li class="switch">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="9" cy="9" r="9" fill="white" />
               </svg>
                     </li>
-                    <li>
+                    <li class="switch">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="9" cy="9" r="9" fill="white" />
               </svg>
@@ -89,101 +87,88 @@
             </div>
         </section>
         <section class="services">
+            <h2 class="visually-hidden">Услуги</h2>
+            <ul class="services-list">
+                <li class="services-item">
+                    <img src="img/1.png" width="300" height="146" alt="Изображение веб-сайта" />
+                    <h3 class="title title-servise">Веб-сайты</h3>
+                    <p class="page-text">
+                        Мир никогда не будет прежним после того как увидит ваш сайт!
+                    </p>
+                    <a class="button button-red" href="blank.html">Заказать</a>
+                </li>
+                <li class="services-item">
+                    <img src="img/2.png" width="300" height="146" alt="Изображение приложения" />
+                    <h3 class="title title-servise">Приложения</h3>
+                    <p class="page-text">
+                        Покорите топ-10 приложений в AppStore и Google Play
+                    </p>
+                    <a class="button button-green" href="#nowhere">Заказать</a>
+                </li>
+                <li class="services-item">
+                    <img src="img/3.png" width="300" height="146" alt="Изображение призентации" />
+                    <h3 class="title title-servise">Презентации</h3>
+                    <p class="page-text">
+                        Вы даже не подозреваете, насколько вы изумительны!
+                    </p>
+                    <a class="button button-yellow" href="#nowhere">Заказать</a>
+                </li>
+            </ul>
+        </section>
+        <section class="about">
+            <h2 class="visually-hidden">О студии</h2>
+            <div class="about">
+                <p class="slogan-about">
+                    Мы — маленькая, но гордая<br />дизайн-студия из Краснодара.
+                </p>
+                <p class="page-text">
+                    Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
+                </p>
+                <p class="title-about">Выполняем заказы на разработку:</p>
+                <ul class="development-list">
+                    <li class="development-item">Веб-сайтов любой сложности</li>
+                    <li class="development-item">
+                        Мобильных приложений для iOS и Android
+                    </li>
+                    <li class="development-item">
+                        Слайдшоу и видео для корпоративных презентаций
+                    </li>
+                </ul>
+            </div>
+            <div class="triggers">
+                <img src="img/nerds-pic.png" width="360" height="208" alt="Логотип интернет-магазина Nerds" />
+                <p class="title-about">с 2004 года Любим точность во всем:</p>
+                <dl class="triggers-list">
+                    <dt>Уровень самоотдачи</dt>
+                    <dd>146<sup>%</sup></dd>
+                    <dt>Соблюдение сроков</dt>
+                    <dd>100<sup>%</sup></dd>
+                    <dt>Минимальная предоплата</dt>
+                    <dd>50<sup>%</sup></dd>
+                </dl>
+            </div>
+        </section>
+        <section class="portfolio">
             <div class="wrapper">
-                <h2 class="visually-hidden">Услуги</h2>
-                <ul class="services-list">
-                    <li class="services-item">
-                        <img src="img/1.png" width="300" height="146" alt="Изображение веб-сайта" />
-                        <h3>Веб-сайты</h3>
-                        <p>
-                            Мир никогда не будет прежним после того как увидит ваш сайт!
-                        </p>
-                        <a class="services-item button" href="blank.html">Заказать</a>
-                    </li>
-                    <li class="services-item">
-                        <img src="img/2.png" width="300" height="146" alt="Изображение приложения" />
-                        <h3>Приложения</h3>
-                        <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                        <a class="services-item button-green" href="#nowhere">Заказать</a>
-                    </li>
-                    <li class="services-item">
-                        <img src="img/3.png" width="300" height="146" alt="Изображение призентации" />
-                        <h3>Презентации</h3>
-                        <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                        <a class="services-item button-yellow" href="#nowhere">Заказать</a
-              >
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="about">
-        <h2 class="visually-hidden">О студии</h2>
-        <div class="about">
-          <p class="slogan-about">
-            Мы — маленькая, но гордая<br />дизайн-студия из Краснодара.
-          </p>
-          <p class="text-about">
-            Исповедуем принципы минимализма и чистоты. Ставим математический
-            расчет превыше креатива. Работаем не покладая рук, как роботы.
-          </p>
-          <p class="title-about">Выполняем заказы на разработку:</p>
-          <ul class="development-list">
-            <li class="development-item">Веб-сайтов любой сложности</li>
-            <li class="development-item">
-              Мобильных приложений для iOS и Android
-            </li>
-            <li class="development-item">
-              Слайдшоу и видео для корпоративных презентаций
-            </li>
-          </ul>
-        </div>
-        <div class="triggers">
-          <img
-            src="img/nerds-pic.png"
-            width="360"
-            height="208"
-            alt="Логотип интернет-магазина Nerds"
-          />
-          <p class="title-about">с 2004 года Любим точность во всем:</p>
-          <dl class="triggers-list">
-            <dt>Уровень самоотдачи</dt>
-            <dd>146<sup>%</sup></dd>
-            <dt>Соблюдение сроков</dt>
-            <dd>100<sup>%</sup></dd>
-            <dt>Минимальная предоплата</dt>
-            <dd>50<sup>%</sup></dd>
-          </dl>
-        </div>
-      </section>
-      <section class="portfolio">
-        <div class="wrapper">
-          <h2 class="visually-hidden">Портфолио</h2>
-          <ul class="portfolio-list">
-            <li class="portfolio-item">
-              <a
-                href="https://htmlacademy.ru/intensive/htmlcss"
-                class="portfolio-link"
-              >
-                <img
-                  src="img/htmlacademy.svg"
-                  alt="htmlacademy"
-                  width="200"
-                  height="68"
-                />
-              </a>
+                <h2 class="visually-hidden">Портфолио</h2>
+                <ul class="portfolio-list">
+                    <li class="portfolio-item">
+                        <a href="https://htmlacademy.ru/intensive/htmlcss" class="portfolio-link">
+                            <img src="img/htmlacademy.svg" alt="htmlacademy" width="200" height="68" />
+                        </a>
                     </li>
                     <li class="portfolio-item">
-                        <a href="#nowhere" class="portfolio-link">
+                        <a href="blank.html" class="portfolio-link">
                             <img src="img/borodinski.svg" width="200" height="68" alt="Barbeshop Boradinski" />
                         </a>
                     </li>
                     <li class="portfolio-item">
-                        <a href="#nowhere" class="portfolio-link">
+                        <a href="blank.html" class="portfolio-link">
                             <img src="img/pink.svg" width="200" height="68" alt="Pink" />
                         </a>
                     </li>
                     <li class="portfolio-item">
-                        <a href="#nowhere" class="portfolio-link">
+                        <a href="blank.html" class="portfolio-link">
                             <img src="img/mishka.svg" width="200" height="68" alt="Mishka" />
                         </a>
                     </li>
@@ -197,9 +182,11 @@
             <img src="img/map.jpg" width="100%" height="416" alt="Карта Санкт-Петербурга" />
             <img src="img/map-marker.png" width="230" height="190" class="map-marker" alt="Местоположение на карте" />
         </section>
-        <section>
-            <h2>NЁRDS DESIGN STUDIO</h2>
-            <p>наб. Реки Карповки,<br />5 лит П, Санкт-Петербург</p>
+        <section class="contacts">
+            <h2 class="contact-title">NЁRDS DESIGN STUDIO</h2>
+            <p class="contact-text">
+                наб. Реки Карповки,<br />5 лит П, Санкт-Петербург
+            </p>
             <p class="contact-tel">
                 тел. <a href="tel:+78005558628">+7 800 555-86-28</a>
             </p>
@@ -283,7 +270,7 @@
             <div class="promo">
                 <h2 class="visually-hidden">Промоакция магазина Нердс</h2>
                 <span>Давайте дружить, это выгодно!</span>
-                <p>Скидка 10% для друзей из социальных сетей.</p>
+                <p class="page-text">Скидка 10% для друзей из социальных сетей.</p>
             </div>
         </section>
     </footer>
