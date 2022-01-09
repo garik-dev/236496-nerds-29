@@ -119,7 +119,7 @@ img {
   background-color: var(--basic-neutral-grey);
 }
 
-.advantage-slogan {
+.big-title {
   margin: 0;
   font-size: 55px;
   line-height: 55px;
@@ -297,4 +297,56 @@ img {
 .message-item input:hover,
 .message-item textarea:hover {
   border: 2px solid var(--special-grey);
+}
+
+
+/* catalog */
+
+.filter-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.filter-item-none {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: var(--basic-neutral-grey);
+  border: none;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.button-grey {
+  background-color: var(--basic-neutral-grey);
+  color: var(--basic-black);
+}
+
+.button-grey:hover {
+  background-color: var(--basic-extra-grey);
+}
+
+.button-grey:focus {
+  background-color: var(--basic-dark-grey);
+  color: var(--basic-grey);
+}
+
+.sort-list {
+  list-style: none;
+}
+
+.sort-control {
+  list-style: none;
+}
+
+.content-browser {
+  list-style: none;
+}
+
+.pagination {
+  list-style: none;
 }
