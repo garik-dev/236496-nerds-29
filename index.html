@@ -15,16 +15,16 @@
 
 <body class="page-body">
   <header class="main-header">
-    <nav class="main-navigation container">
+    <nav class="main-navigation">
       <a class="main-header-logo">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип
               интернет-магазина Nerds" class="logo" />
       </a>
       <ul class="site-navigation">
-        <li><a href="blank.html">Студия</a></li>
-        <li><a href="blank.html">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="blank.html">Контакты</a></li>
+        <li class="site-navigation-item"><a href="blank.html">Студия</a></li>
+        <li class="site-navigation-item"><a href="blank.html">Клиенты</a></li>
+        <li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
+        <li class="site-navigation-item"><a href="blank.html">Контакты</a></li>
       </ul>
       <a href="blank.html" class="basket-link">Корзина</a>
     </nav>
@@ -40,9 +40,9 @@
             Математически выверенный дизайн<br /> для вашего сайта или мобильного приложения.
           </p>
           <a href="blank.html" class="button slider-button">Узнать больше</a>
-
-          <img src="img/slide1.png" width="760" height="431" alt="Изображение смартфонов" />
         </div>
+        <img src="img/slide1.png" width="760" height="431" alt="Изображение смартфонов" />
+
         <!--
                 <div class="advantage-slide">
                     <p class="advantage-slogan">
@@ -86,7 +86,7 @@
         </ul>
       </div>
     </section>
-    <section class="services">
+    <section class="services container">
       <h2 class="visually-hidden">Услуги</h2>
       <ul class="services-list">
         <li class="services-item">
@@ -114,10 +114,11 @@
           <a class="button button-yellow" href="blank.html">Заказать</a>
         </li>
       </ul>
+      <hr class="line">
     </section>
-    <section class="about">
+    <section class="about container">
       <h2 class="visually-hidden">О студии</h2>
-      <div class="about">
+      <div class="about-wrap">
         <p class="slogan-about">
           Мы — маленькая, но гордая<br />дизайн-студия из Краснодара.
         </p>
@@ -138,17 +139,22 @@
       <div class="triggers">
         <img src="img/nerds-pic.png" width="360" height="208" alt="Логотип интернет-магазина Nerds" />
         <p class="title-about">с 2004 года Любим точность во всем:</p>
-        <dl class="triggers-list">
-          <dt class="trigger">Уровень самоотдачи</dt>
-          <dd class="trigger-item">146<sup>%</sup></dd>
-          <dt class="trigger">Соблюдение сроков</dt>
-          <dd class="trigger-item">100<sup>%</sup></dd>
-          <dt class="trigger">Минимальная предоплата</dt>
-          <dd class="trigger-item">50<sup>%</sup></dd>
-        </dl>
+        <table class="triggers-list">
+          <tr class="trigger-item">
+            <th>146<sup>%</sup></th>
+            <th>100<sup>%</sup></th>
+            <th>50<sup>%</sup></th>
+          </tr>
+          <tr>
+            <td>Уровень самоотдачи</td>
+            <td>Соблюдение сроков</td>
+            <td>Минимальная предоплата</td>
+          </tr>
+        </table>
       </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio container">
+      <hr class="line">
       <div class="wrapper">
         <h2 class="visually-hidden">Портфолио</h2>
         <ul class="portfolio-list">
@@ -176,12 +182,13 @@
       </div>
     </section>
   </main>
-  <footer class="main-footer">
+  <div class="main-footer">
     <section class="map">
       <h2 class="visually-hidden">Где нас найти - карта</h2>
       <img src="img/map.jpg" width="100%" height="416" alt="Карта Санкт-Петербурга" />
       <img src="img/map-marker.png" width="230" height="190" class="map-marker" alt="Местоположение на карте" />
     </section>
+
     <section class="contacts">
       <h2 class="contact-title">NЁRDS DESIGN STUDIO</h2>
       <p class="contact-text">
@@ -192,30 +199,34 @@
       </p>
       <button type="button" class="button">Напишите нам</button>
     </section>
-    <section class="social">
-      <h2 class="visually-hidden">Нердс в социальных сетях</h2>
-      <ul class="social-list">
-        <li class="social-button">
-          <a href="https://vk.com/htmlacademy">htmlacademy </a>
-        </li>
-        <li class="social-button">
-          <a href="https://www.facebook.com/htmlacademy/">facebook </a>
-        </li>
-        <li class="social-button">
-          instagram
-          <a href="https://www.instagram.com/htmlacademy/"> </a>
-        </li>
-      </ul>
+    <div class="footer-grid container">
+      <section class="social">
+        <h2 class="visually-hidden">Нердс в социальных сетях</h2>
+        <ul class="social-list">
+          <li class="social-button">
+            <a href="https://vk.com/htmlacademy">htmlacademy </a>
+          </li>
+          <li class="social-button">
+            <a href="https://www.facebook.com/htmlacademy/">facebook </a>
+          </li>
+          <li class="social-button">
+            instagram
+            <a href="https://www.instagram.com/htmlacademy/"> </a>
+          </li>
+        </ul>
 
-      <div class="promo">
-        <h2 class="visually-hidden">Промоакция магазина Нердс</h2>
-        <span class="promo-slogan">Давайте дружить, это выгодно!</span>
-        <p class="page-text page-text-promo">
-          Скидка 10% для друзей из социальных сетей.
-        </p>
-      </div>
-    </section>
+        <div class="promo">
+          <h2 class="visually-hidden">Промоакция магазина Нердс</h2>
+          <span class="promo-slogan">Давайте дружить, это выгодно!</span>
+          <p class="page-text page-text-promo">
+            Скидка 10% для друзей из социальных сетей.
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>
   </footer>
+  <!--
   <section class="modal-message">
     <h2 class="message-title">Напишите нам</h2>
     <form class="message-form" action="https://echo.htmlacademy.ru" method="post">
@@ -237,9 +248,9 @@
   </section>
   <section class="modal modal-map">
     <h2>Как до нас добраться</h2>
-    <!-- Здесь будет карта -->
-    <button class="modal-close" type="button">Закрыть</button>
-  </section>
+     Здесь будет карта
+  <button class="modal-close" type="button">Закрыть</button>
+  </section> -->
 </body>
 
 </html>

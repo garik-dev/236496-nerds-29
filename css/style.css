@@ -30,8 +30,13 @@
 
 /* Global */
 
-body {
-  min-width: 1440px;
+.page {
+  height: 100%;
+  box-sizing: content-box;
+}
+
+.page-body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
@@ -41,6 +46,10 @@ body {
   color: var(--basic-dark-black);
   text-transform: none;
   background-color: var(--basic-white);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {
@@ -74,20 +83,41 @@ img {
   border-radius: 3px;
 }
 
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
 
 /* navigation */
 
-.main-navigation {
-  line-height: 30px;
-  font-weight: 500;
-  text-transform: uppercase;
+.main-header {
+  padding-top: 50px;
   background-color: var(--basic-neutral-grey);
 }
 
+.main-navigation {
+  width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 160px 1fr min-content;
+  align-items: center;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 .site-navigation {
+  justify-self: center;
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.site-navigation-item {
+  margin-left: 45px;
 }
 
 .site-navigation a:hover,
@@ -119,6 +149,14 @@ img {
   background-color: var(--basic-neutral-grey);
 }
 
+.advantage-slider {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 80px;
+}
+
 .big-title {
   margin: 0;
   font-size: 55px;
@@ -138,6 +176,8 @@ img {
 }
 
 .services-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -191,6 +231,26 @@ img {
 
 /* about */
 
+.line {
+  display: block;
+  height: 2px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  background-color: var(--basic-neutral-grey);
+  border: none
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 150px;
+}
+
+.development-list {
+  list-style: none;
+  padding: 0;
+}
+
 .slogan-about {
   font-size: 45px;
   font-weight: 500;
@@ -202,6 +262,10 @@ img {
   font-weight: 700;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+.triggers-list {
+  display: grid;
 }
 
 .trigger {
@@ -223,13 +287,25 @@ img {
 /* portfolio */
 
 .portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
   margin: 0;
+  margin-bottom: 80px;
   padding: 0;
   list-style: none;
 }
 
 
 /* footer */
+
+.social {
+  display: grid;
+  grid-template-columns: 261px 1fr;
+  justify-self: center;
+  padding-top: 68px;
+  padding-bottom: 68px;
+}
 
 .social-list {
   margin: 0;
@@ -350,3 +426,6 @@ img {
 .pagination {
   list-style: none;
 }
+
+
+/* Grid */
