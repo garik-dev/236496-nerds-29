@@ -404,6 +404,7 @@
               }
 
               .filter-title {
+                padding-top: 37px;
                 font-size: 18px;
                 line-height: 30px;
                 font-weight: 700;
@@ -438,9 +439,11 @@
 
               .sort-list {
                 display: flex;
+                width: 100%;
+                justify-content: flex-end;
                 list-style: none;
-                margin: 61px;
-                padding: 0;
+                margin: 0;
+                padding-top: 60px;
                 text-align: left;
               }
 
@@ -448,11 +451,14 @@
                 margin-left: 25px;
               }
 
-              .content-header {
+              .sort-control {
+                display: flex;
+                flex-basis: 40px;
+                justify-content: space-between;
                 list-style: none;
-                margin: 0;
-                padding: 0;
               }
+
+              .content-header {}
 
               .content-browser {
                 display: grid;
@@ -472,5 +478,32 @@
 
               .pagination {
                 list-style: none;
+                display: flex;
+                min-width: 445px;
+                justify-content: flex-start;
               }
-              /* Grid */
+
+              .pagination-item {
+                margin-left: 11px;
+              }
+
+              .filter-catalog fieldset {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                margin: 0;
+                margin-bottom: 47px;
+                border: none;
+              }
+
+              .legend-title {
+                margin-bottom: 16px;
+              }
+
+              .filter-item label {
+                margin-bottom: 20px;
+              }
+
+              .social-button {
+                margin-left: 10px;
+              }
