@@ -527,8 +527,7 @@
                   width: 960px;
                   padding: 65px 100px 85px 100px;
                   background-color: var(--basic-white);
-                  box-shadow: 1px 1px 1px 1px #888888;
-                  box-shadow: 3px 3px 3px 3px #DED7D7;
+                  box-shadow: 3px 3px 5px 3px #DED7D7;
                   font: inherit;
                 }
 
