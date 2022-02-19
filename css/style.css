@@ -31,10 +31,12 @@
 
                 .page {
                   box-sizing: content-box;
+                  height: 100%;
                 }
 
                 .page-body {
                   min-width: 1200px;
+                  min-height: 100%;
                   margin: 0;
                   padding: 0;
                   font-family: "Roboto", sans-serif;
@@ -44,7 +46,6 @@
                   color: var(--basic-dark-black);
                   text-transform: none;
                   background-color: var(--basic-white);
-                  min-height: 100%;
                   display: grid;
                   grid-template-rows: min-content 1fr min-content;
                   align-content: start;
@@ -164,21 +165,21 @@
                   color: var(--basic-red);
                 }
 
-                .site-navigation a:focus,
-                .basket-link:focus {
+                .site-navigation a:active,
+                .basket-link:active {
                   color: var(--basic-grey);
                 }
 
-                .logo {
+                .main-header-logo {
                   fill: var(--basic-black);
                 }
 
-                .logo:hover {
-                  fill: var(--basis-opacity-70);
+                .main-header-logo:hover {
+                  opacity: 0.7;
                 }
 
-                .logo:focus {
-                  fill: var(--basis-opacity-30);
+                .main-header-logo :active {
+                  opacity: 0.3;
                 }
                 /* Global */
 
@@ -256,8 +257,8 @@
                   background-color: var(--basic-light-red);
                 }
 
-                .button:focus,
-                .button-red:focus {
+                .button:active,
+                .button-red:active {
                   background-color: var(--basic-extra-red);
                   color: var(--basis-white-30);
                 }
@@ -271,6 +272,10 @@
                   background-color: var(--basic-light-green);
                 }
 
+                .button-green:active {
+                  background-color: var(--basic-extra-green);
+                }
+
                 .button-yellow {
                   box-sizing: border-box;
                   background-color: var(--basic-yellow);
@@ -280,7 +285,7 @@
                   background-color: var(--basic-light-yellow);
                 }
 
-                .button-yellow:focus {
+                .button-yellow:active {
                   background-color: var(--basic-extra-yellow);
                 }
                 /* about */
@@ -428,14 +433,12 @@
                 .map {
                   position: relative;
                   width: 100%;
-                  height: 416px;
-                  margin-bottom: 160px;
                 }
 
                 .map-marker {
                   position: absolute;
-                  top: 30%;
-                  right: 30%;
+                  top: 70px;
+                  right: 15%;
                 }
 
                 .contacts {
@@ -460,19 +463,49 @@
 
                 .footer {
                   display: flex;
+                  justify-content: flex-start;
                   width: 100%;
+                  padding: 70px 0;
                 }
 
                 .social {
                   align-items: center;
+                  margin-right: 140px;
                 }
 
                 .social-list {
-                  width: 260px;
                   display: flex;
                   justify-content: flex-start;
-                  margin-right: 10px;
+                  align-items: center;
                   list-style: none;
+                  margin: 0;
+                  padding: 0;
+                }
+
+                .social-button {
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-left: 0;
+                  width: 81px;
+                  height: 81px;
+                  background-color: var(--basic-extra-grey);
+                  color: inherit;
+                  border-radius: 50%;
+                }
+
+                .social-button:hover {
+                  background-color: var(--basic-light-red);
+                }
+
+                .social-button:focus path {
+                  background-color: var(--basic-extra-red);
+                  fill: var(--basis-white-30);
+                }
+
+                .social-button {
+                  margin-left: 10px;
+                  margin-right: 0;
                 }
 
                 .promo-slogan {
@@ -488,9 +521,14 @@
                 /* modal */
 
                 .modal-message {
+                  position: relative;
+                  top: -50px;
+                  left: 25%;
                   width: 960px;
-                  height: 590px;
-                  border: 1px solid rgba(0, 0, 0, 30%);
+                  padding: 65px 100px 85px 100px;
+                  background-color: var(--basic-white);
+                  box-shadow: 1px 1px 1px 1px #888888;
+                  box-shadow: 3px 3px 3px 3px #DED7D7;
                   font: inherit;
                 }
 
@@ -499,7 +537,7 @@
                   font-weight: 700;
                 }
 
-                .label-name {
+                .message-item label {
                   font-size: 16px;
                   font-weight: 700;
                   line-height: 18x;
@@ -509,6 +547,25 @@
                   font: inherit;
                   line-height: 18px;
                   color: var(--basic-light-black);
+                }
+
+                .message-item input,
+                textarea {
+                  padding-left: 16px;
+                  margin-top: 10px;
+                }
+
+                .message-item textarea {
+                  padding: 16px;
+                }
+
+                .modal-close {
+                  position: absolute;
+                  top: 65px;
+                  right: 100px;
+                  background-color: var(--basic-white);
+                  border: none;
+                  cursor: pointer;
                 }
 
                 .message-item input {
